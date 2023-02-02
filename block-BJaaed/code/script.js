@@ -116,24 +116,24 @@ let books = [
     }
 ]
 
-// let ul = document.querySelector("ul");
-// books.forEach((ele) =>{
-//     let li = document.createElement("li");
-//     li.classList.add("center" ,"width33");
-//     let img = document.createElement("img");
-//     let h2 = document.createElement("h2");
-//     let h3 = document.createElement("h3");
-//     let btn = document.createElement("button");
-//     let a = document.createElement("a");
-//     a.href = ele.website;
-//     a.innerText = "Click Me";
-//     btn.append(a);
-//     img.src = ele.image;
-//     h2.innerText = ele.title;
-//     h3.innerText = ele.author;
-//     li.append(img, h2,h3,btn);
-//     ul.append(li);
-// });
+let ul = document.querySelector("ul");
+books.forEach((ele) =>{
+    let li = document.createElement("li");
+    li.classList.add("center" ,"width33");
+    let img = document.createElement("img");
+    let h2 = document.createElement("h2");
+    let h3 = document.createElement("h3");
+    let btn = document.createElement("button");
+    let a = document.createElement("a");
+    a.href = ele.website;
+    a.innerText = "Click Me";
+    btn.append(a);
+    img.src = ele.image;
+    h2.innerText = ele.title;
+    h3.innerText = ele.author;
+    li.append(img, h2,h3,btn);
+    ul.append(li);
+});
     
 
 
